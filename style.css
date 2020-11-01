@@ -43,13 +43,11 @@ html{height: 100%;
 } */
 .rightbar{
     background-color: rgba(0, 0, 0, 0.623);
-    height: 130px;
-    width: 80px;
-    order: 3;
+    height: 80px;
+    width: 150px;
     border-radius: 20px;
     display: none;
-    flex-direction: column;
-    align-content: center;
+    
     position: absolute;
     top: 10px;
     right: 10px;
@@ -61,7 +59,7 @@ html{height: 100%;
 background-color: white;
 height: 40px;
 width: 40px;
-margin: 10px 10px 10px 20px ;
+margin: 20px 10px 10px 20px ;
 border-radius: 5px;
 padding: 2px;
 font-size: 0.6rem;
@@ -75,7 +73,6 @@ transition: all 0.5s;
 .aboutme::-webkit-scrollbar{
     display: none;
 }
-
 .aboutme{
     background-color: black;
     border-radius: 20px;
@@ -83,10 +80,9 @@ transition: all 0.5s;
     font-family: sans-serif;
     color: white;
     height: 65vh;
-    order:2;
-    flex:3;
+    width: 90vw;
     display: none;
-    margin: 140px 10px 10px 100px;
+    margin: 90px auto;
     padding: 30px;
     overflow-y: scroll;
     scrollbar-width: none;
@@ -96,3 +92,4 @@ transition: all 0.5s;
     
 
 }
+
