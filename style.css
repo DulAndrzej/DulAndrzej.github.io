@@ -43,7 +43,7 @@ html{height: 100%;
 }
 .rightbar{
     background-color: rgba(0, 0, 0, 0.623);
-    height: 80vh;
+    
     width: 80px;
     order: 3;
     border-radius: 20px;
