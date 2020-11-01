@@ -71,7 +71,9 @@
 
 ///div aboat me
 let aboutme = document.createElement("div");
-wrapfororg.appendChild(aboutme);
+// wrapfororg.appendChild(aboutme);
+let b=document.querySelector('body');
+b.appendChild(aboutme);
 aboutme.classList.add('aboutme')
 let aboutmebuffor=true;
 aboutme.innerHTML=`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in augue dolor. Nulla et ipsum velit. Pellentesque mi dolor, lobortis nec nisl vitae, ullamcorper sodales eros. Vestibulum vel nibh id nunc condimentum sollicitudin sed tincidunt dolor. Praesent venenatis, enim a euismod vehicula, massa libero hendrerit ipsum, vitae placerat arcu nisi nec dolor. Vestibulum pharetra, neque at consectetur faucibus, magna nulla congue turpis, in pharetra risus metus quis purus. Nullam euismod leo eu arcu varius efficitur. Morbi egestas placerat arcu id auctor. Integer in arcu non orci lobortis suscipit. Vivamus pellentesque eros vel magna viverra, non sollicitudin augue volutpat. Duis ex ipsum, convallis vel velit a, scelerisque mattis velit.
@@ -84,14 +86,14 @@ Nunc venenatis arcu vel aliquam sagittis. Nam at semper dolor. Donec gravida ant
         if(aboutmebuffor){
           aboutme.style.display='block';
           aboutmebuffor=false;
-          bar.style.position="static";
-          org.style.position="static";
+          // bar.style.position="static";
+          // org.style.position="static";
           
         }else{
           aboutme.style.display='none';
           aboutmebuffor=true;
-          bar.style.position="absolute";
-          org.style.position="absolute";
+          // bar.style.position="absolute";
+          // org.style.position="absolute";
           
         }
       });
