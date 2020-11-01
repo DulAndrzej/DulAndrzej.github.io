@@ -1,0 +1,97 @@
+@import 'stars.css';
+@import 'slidershow.css';
+html{height: 100%;
+    overflow: hidden;
+    background: radial-gradient(ellipse at bottom,#172330 0%,#090a0f 100%);
+}
+.wrapper{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.blackhole{
+    box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
+    transition:all 0.2s;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid white;
+    background-color: black;
+    cursor: pointer;
+}
+.blackhole:hover{
+    box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
+    transition:all 0.2s;
+}
+.org{
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 80vh;
+    order: 1;
+    width: 200px;
+    border-radius: 20px;
+    display: none;
+    transition:all .5s;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
+    1px 3px 9px -6px rgba(255,255,255,0.15);
+}
+.rightbar{
+    background-color: rgba(0, 0, 0, 0.623);
+    height: 80vh;
+    width: 80px;
+    order: 3;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
+    1px 3px 9px -6px rgba(255,255,255,0.15);
+    
+}
+.navbutton{
+background-color: white;
+height: 40px;
+width: 40px;
+margin: 10px 10px 10px 20px ;
+border-radius: 5px;
+padding: 2px;
+font-size: 0.6rem;
+transition: all 0.5s;
+}
+.navbutton:hover{
+    cursor: pointer;
+    border-radius: 30%;
+    box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
+}
+.aboatme::-webkit-scrollbar{
+    display: none;
+}
+.aboatme{
+    background-color: black;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: white;
+    height: 65vh;
+    order:2;
+    flex:3;
+    display: none;
+    margin: 70px 10px 10px;
+    padding: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+    box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
+    1px 3px 9px -6px rgba(255,255,255,0.15);
+    
+
+}
