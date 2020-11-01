@@ -26,7 +26,7 @@ html{height: 100%;
     box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
     transition:all 0.2s;
 }
-.org{
+/* .org{
     background-color: rgba(0, 0, 0, 0.623);
     height: 80vh;
     order: 1;
@@ -40,7 +40,7 @@ html{height: 100%;
     left: 10px;
     box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
     1px 3px 9px -6px rgba(255,255,255,0.15);
-}
+} */
 .rightbar{
     background-color: rgba(0, 0, 0, 0.623);
     
