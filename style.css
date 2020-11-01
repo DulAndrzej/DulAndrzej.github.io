@@ -30,7 +30,7 @@ html{height: 100%;
     background-color: rgba(0, 0, 0, 0.623);
     height: 80vh;
     order: 1;
-    width: 200px;
+    width: 15vw;
     border-radius: 20px;
     display: none;
     transition:all .5s;
