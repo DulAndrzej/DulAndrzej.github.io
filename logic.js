@@ -38,6 +38,10 @@
         bar.style.position="absolute";
         org.style.position="absolute";
       }
+      if(!contactdivbuffor){
+        contactdiv.style.display='none';
+        contactdivbuffor=true;
+      }
 
 
     });
@@ -56,10 +60,17 @@
       let bar = document.createElement("div");
       let bar1 = document.createElement("button");
       let bar2 = document.createElement("button");
+      let bar3 = document.createElement("button");
+      let bar4 = document.createElement("button");
       bar.classList.add("rightbar"); //prawa belka
       bar1.classList.add("navbutton"); //guzik na prawej belce
-      bar2.classList.add("navbutton");
-      bar2.innerHTML="About";
+      bar2.classList.add("navbutton");//guzik na prawej belce
+      bar3.classList.add("navbutton");//guzik na lewej belce
+      bar4.classList.add("navbutton");//guzik na lewej belce
+      bar1.innerHTML=`<img src="img/information.png" alt="About me" title="About me">`;
+      bar2.innerHTML=`<img src="img/human-brain.png" alt="Skills" title="Skills">`;
+      bar3.innerHTML=`<img src="img/mail.png" alt="Contact" title="Contact">`;
+      bar4.innerHTML=`<img src="img/programming.png" alt="Projects" title="Projects">`;
       let barbufor= true;
 
 // Append somewhere this piece of html shit
@@ -68,6 +79,8 @@
       barwrap=document.querySelector('.rightbar')
       barwrap.appendChild(bar1);
       barwrap.appendChild(bar2);
+      org.appendChild(bar3);
+      org.appendChild(bar4);
 
 ///div aboat me
 let aboutme = document.createElement("div");
@@ -81,7 +94,7 @@ Morbi mattis quam a viverra blandit. Duis nec ornare lacus. Cras mollis tempus i
 Nunc venenatis arcu vel aliquam sagittis. Nam at semper dolor. Donec gravida ante quis massa maximus, eu gravida ligula eleifend. Ut venenatis sem ut ligula dignissim lobortis. Phasellus at augue nec nisi feugiat suscipit. Curabitur a neque et risus interdum sagittis quis eu nisi. In in purus id diam ornare malesuada vitae vel lorem. Donec eu scelerisque dolor. Maecenas volutpat congue velit vel commodo. Phasellus imperdiet nibh vel consequat vulputate. Suspendisse pellentesque a magna elementum imperdiet. Praesent augue orci, pretium sed diam a, vehicula imperdiet erat. Curabitur mattis feugiat maximus. Aliquam sit amet odio viverra, fermentum dolor ac, ultrices nunc. Phasellus sagittis posuere libero id efficitur. `;
 
 //Add event handler
-      bar2.addEventListener ("click", function() {
+      bar1.addEventListener ("click", function() {
 
         if(aboutmebuffor){
           aboutme.style.display='block';
@@ -97,7 +110,41 @@ Nunc venenatis arcu vel aliquam sagittis. Nam at semper dolor. Donec gravida ant
           
         }
       });
+      
+//Add event handler
+bar3.addEventListener ("click", function() {
 
+  if(contactdivbuffor){
+    contactdiv.style.display='flex';
+    contactdivbuffor=false;
+    
+    
+  }else{
+    contactdiv.style.display='none';
+    contactdivbuffor=true;
+    
+    
+  }
+});
+
+/////div contact
+
+const contactdiv =document.createElement('div');
+// wrapfororg.appendChild(aboutme);
+
+
+b.appendChild(contactdiv);
+contactdiv.classList.add('contactdiv')
+let contactdivbuffor=true;
+
+const facebookcontact=document.createElement('div');
+const emailcontact=document.createElement('div');
+facebookcontact.classList.add('cdiv')
+emailcontact.classList.add('cdiv')
+contactdiv.appendChild(facebookcontact);
+contactdiv.appendChild(emailcontact);
+facebookcontact.innerHTML=`<img src="img/facebook.png" alt="" target="Facebook">`;
+emailcontact.innerHTML=`<img src="img/gmail.png" alt="" target="Gmail">`;
 
 
 
