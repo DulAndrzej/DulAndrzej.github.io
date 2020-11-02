@@ -1,9 +1,8 @@
 
 (function(){
-// ///slider
-//     // const slider =document.querySelector('.slidercontent-carrousel');
-//     // slider.style.display='none';
-//      let sliderbufor=true;
+//############################################################
+//################### BlackHole ######################
+//############################################################
 
 // Create the button black hole
     let blackhole = document.createElement("button");
@@ -42,11 +41,17 @@
         contactdiv.style.display='none';
         contactdivbuffor=true;
       }
+      if(!projectdivbuffor){
+        projectdiv.style.display='none';
+    projectdivbuffor=true;
+      }
 
 
     });
+//############################################################
+//#################### leftbar organizer #####################
+//############################################################
 
-//leftbar organizer
 // Create the fucking div
      let org = document.createElement("div");
      org.classList.add('org');
@@ -55,8 +60,13 @@
 //  Append somewhere this piece of html shit
      let wrapfororg = document.querySelector('.wrapper');
      wrapfororg.appendChild(org);
+//#### Append buttons ###################
+     
 
-// Create the fucking rightbar
+//############################################################
+//#################### rightbar organizer #####################
+//############################################################
+
       let bar = document.createElement("div");
       let bar1 = document.createElement("button");
       let bar2 = document.createElement("button");
@@ -80,9 +90,12 @@
       barwrap.appendChild(bar1);
       barwrap.appendChild(bar2);
       org.appendChild(bar3);
-      org.appendChild(bar4);
+     org.appendChild(bar4);
 
-///div aboat me
+//############################################################
+//################### div aboat me ################
+//############################################################
+
 let aboutme = document.createElement("div");
 // wrapfororg.appendChild(aboutme);
 let b=document.querySelector('body');
@@ -111,23 +124,10 @@ Nunc venenatis arcu vel aliquam sagittis. Nam at semper dolor. Donec gravida ant
         }
       });
       
-//Add event handler
-bar3.addEventListener ("click", function() {
 
-  if(contactdivbuffor){
-    contactdiv.style.display='flex';
-    contactdivbuffor=false;
-    
-    
-  }else{
-    contactdiv.style.display='none';
-    contactdivbuffor=true;
-    
-    
-  }
-});
-
-/////div contact
+//############################################################
+/////########## div contact ##############################
+//############################################################
 
 const contactdiv =document.createElement('div');
 // wrapfororg.appendChild(aboutme);
@@ -145,6 +145,83 @@ contactdiv.appendChild(facebookcontact);
 contactdiv.appendChild(emailcontact);
 facebookcontact.innerHTML=`<img src="img/facebook.png" alt="" target="Facebook">`;
 emailcontact.innerHTML=`<img src="img/gmail.png" alt="" target="Gmail">`;
+
+//Add event handler
+bar3.addEventListener ("click", function() {
+
+  if(contactdivbuffor){
+    contactdiv.style.display='flex';
+    contactdivbuffor=false;
+    
+    
+  }else{
+    contactdiv.style.display='none';
+    contactdivbuffor=true;
+    
+    
+  }
+});
+
+//###########################################################
+//#################### project #############################
+//############################################################
+
+const projectdiv =document.createElement('div');
+// wrapfororg.appendChild(aboutme);
+
+
+b.appendChild(projectdiv);
+projectdiv.classList.add('projectdiv')
+let projectdivbuffor=true;
+
+const githubproject=document.createElement('div');
+const project01=document.createElement('div');
+const project02=document.createElement('div');
+const project03=document.createElement('div');
+const project04=document.createElement('div');
+const project05=document.createElement('div');
+const project06=document.createElement('div');
+const project07=document.createElement('div');
+githubproject.classList.add('pdiv')
+project01.classList.add('pdiv')
+project02.classList.add('pdiv')
+project03.classList.add('pdiv')
+project04.classList.add('pdiv')
+project05.classList.add('pdiv')
+project06.classList.add('pdiv')
+project07.classList.add('pdiv')
+projectdiv.appendChild(githubproject);
+projectdiv.appendChild(project01);
+projectdiv.appendChild(project02);
+projectdiv.appendChild(project03);
+projectdiv.appendChild(project04);
+projectdiv.appendChild(project05);
+projectdiv.appendChild(project06);
+projectdiv.appendChild(project07);
+githubproject.innerHTML=`<img src="img/github.png" alt="" target="Github">`;
+project01.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project02.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project03.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project04.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project05.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project06.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+project07.innerHTML=`<img src="img/404-error.png" alt="" target="Projekt">`;
+
+//Add event handler
+bar4.addEventListener ("click", function() {
+
+  if(projectdivbuffor){
+    projectdiv.style.display='flex';
+    projectdivbuffor=false;
+    
+    
+  }else{
+    projectdiv.style.display='none';
+    projectdivbuffor=true;
+    
+    
+  }
+});
 
 
 
