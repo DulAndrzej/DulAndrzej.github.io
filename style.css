@@ -10,8 +10,10 @@ html{height: 100%;
     justify-content: center;
     flex-direction: row;
 }
+
+
 .blackhole{
-    box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
+    
     transition:all 0.2s;
     border-radius: 50%;
     position: absolute;
@@ -24,13 +26,12 @@ html{height: 100%;
 }
 .blackhole:hover{
     box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
-    transition:all 0.2s;
+    
 }
-/* .org{
+.org{
     background-color: rgba(0, 0, 0, 0.623);
-    height: 80vh;
-    order: 1;
-    width: 15vw;
+    height: 80px;
+    width: 150px;
     border-radius: 20px;
     display: none;
     transition:all .5s;
@@ -40,14 +41,13 @@ html{height: 100%;
     left: 10px;
     box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
     1px 3px 9px -6px rgba(255,255,255,0.15);
-} */
+} 
 .rightbar{
     background-color: rgba(0, 0, 0, 0.623);
     height: 80px;
     width: 150px;
     border-radius: 20px;
     display: none;
-    
     position: absolute;
     top: 10px;
     right: 10px;
@@ -56,25 +56,29 @@ html{height: 100%;
     
 }
 .navbutton{
-background-color: white;
+
+background-color: rgba(0, 0, 0, 0);
 height: 40px;
 width: 40px;
 margin: 20px 10px 10px 20px ;
 border-radius: 5px;
 padding: 2px;
-font-size: 0.6rem;
+font-size: 0,6rem;
 transition: all 0.5s;
+border: none;
 }
 .navbutton:hover{
     cursor: pointer;
     border-radius: 30%;
     box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
 }
+
 .aboutme::-webkit-scrollbar{
     display: none;
 }
+
 .aboutme{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.548);
     border-radius: 20px;
     font-size: 0.9rem;
     font-family: sans-serif;
@@ -89,7 +93,56 @@ transition: all 0.5s;
     -ms-overflow-style: none; 
     box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
     1px 3px 9px -6px rgba(255,255,255,0.15);
-    
-
 }
+
+.contactdiv{
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    color: white;
+    height: 65vh;
+    width: 80vw;
+    display: none;
+    margin: 90px auto;
+    padding: 30px;
+    align-items: center;
+    
+}
+
+.cdiv{
+    box-sizing: border-box;
+    padding: 10px;
+    height: 150px;
+    width: 150px;
+    margin: 4px;
+    border-radius: 20px;
+    box-shadow: inset 1px 3px 9px 5px rgba(255,255,255,0.10),
+    1px 3px 9px -6px rgba(255,255,255,0.15);
+    transition: all 0.6s;
+}
+.cdiv img{
+    height: 100%;
+}
+.cdiv:hover{
+    cursor: pointer;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px 1px rgb(109, 11, 236);
+}
+
+@media screen and (max-width: 600px) {
+    .contactdiv{
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
+    .cdiv{
+        margin: auto;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    .contactdiv{
+        justify-content: space-around;
+    }
+  }
+
+
 
